@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <defs>
+    <style>
+      .line { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.13; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:#4386b8; stroke-width:1.1; fill:none; opacity:.10; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:6 8; }
+      .node { fill:#4386b8; opacity:.16; }
+      .nodeRing { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.15; }
+      .dev { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.12; stroke-linecap:round; stroke-linejoin:round; }
+      .devFill { fill:#4386b8; opacity:.10; }
+      .icon { stroke:#4386b8; stroke-width:1.4; fill:none; opacity:.12; stroke-linecap:round; stroke-linejoin:round; }
+      .txt { fill:#4386b8; opacity:.09; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; font-size:10px; letter-spacing:.12em; }
+      .mono { fill:#4386b8; opacity:.08; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas; font-size:10px; letter-spacing:.18em; }
+    </style>
+
+    <g id="seal">
+      <circle cx="0" cy="0" r="40"/>
+      <circle cx="0" cy="0" r="31" stroke-dasharray="3 5"/>
+      <path d="M0 -14 L3.5 -4.9 L13.3 -4.3 L5.7 1.9 L8.2 11.3 L0 6 L-8.2 11.3 L-5.7 1.9 L-13.3 -4.3 L-3.5 -4.9 Z"/>
+      <path d="M-18 36 L-26 78 L-12 70 L-4 82 L2 42"/>
+      <path d="M18 36 L26 78 L12 70 L4 82 L-2 42"/>
+    </g>
+    <g id="cert">
+      <rect x="0" y="0" width="240" height="160" rx="14"/>
+      <rect x="10" y="10" width="220" height="140" rx="8" stroke-dasharray="4 6"/>
+      <path d="M70 36 H170"/>
+      <path d="M40 62 H200"/>
+      <path d="M40 80 H180"/>
+      <path d="M40 98 H190"/>
+      <path d="M40 130 H110"/>
+      <circle cx="196" cy="122" r="14"/>
+      <path d="M190 122 l4 4 l8-9"/>
+    </g>
+  </defs>
+
+  <!-- Education and qualifications -->
+  <g class="dev">
+    <use href="#cert" x="300" y="70"/>
+    <use href="#cert" x="60" y="400" transform="translate(60 400) scale(.92) translate(-60 -400)"/>
+    <use href="#cert" x="590" y="470" transform="translate(590 470) scale(.95) translate(-590 -470)"/>
+  </g>
+  <text class="txt" x="372" y="113">CERTIFICATE OF COMPLETION</text>
+
+  <!-- Seals -->
+  <g class="icon">
+    <use href="#seal" x="130" y="160"/>
+    <use href="#seal" x="740" y="150"/>
+    <use href="#seal" x="240" y="710"/>
+  </g>
+  <g>
+    <circle class="devFill" cx="130" cy="160" r="4"/>
+    <circle class="devFill" cx="740" cy="150" r="4"/>
+    <circle class="devFill" cx="240" cy="710" r="4"/>
+  </g>
+
+  <!-- Checklist -->
+  <g transform="translate(350,300)">
+    <rect class="dev" x="0" y="0" width="22" height="22" rx="6"/>
+    <path class="icon" d="M5 11 l5 5 l8-10"/>
+    <path class="dev" d="M38 11 H190"/>
+    <rect class="dev" x="0" y="40" width="22" height="22" rx="6"/>
+    <path class="icon" d="M5 51 l5 5 l8-10"/>
+    <path class="dev" d="M38 51 H160"/>
+    <rect class="dev" x="0" y="80" width="22" height="22" rx="6"/>
+    <path class="icon" d="M5 91 l5 5 l8-10"/>
+    <path class="dev" d="M38 91 H176"/>
+  </g>
+
+  <!-- Cert pills -->
+  <g>
+    <rect class="dev" x="340" y="480" width="64" height="28" rx="14"/>
+    <rect class="dev" x="412" y="480" width="64" height="28" rx="14"/>
+    <rect class="dev" x="340" y="518" width="64" height="28" rx="14"/>
+    <rect class="dev" x="412" y="518" width="80" height="28" rx="14"/>
+    <text class="txt" x="355" y="498">KIT</text>
+    <text class="txt" x="426" y="498">M.SC.</text>
+    <text class="txt" x="355" y="536">B.TECH</text>
+    <text class="txt" x="426" y="536">IELTS</text>
+  </g>
+
+  <!-- Medal + shield -->
+  <g class="icon">
+    <g transform="translate(470,730)">
+      <circle cx="0" cy="0" r="24"/>
+      <circle cx="0" cy="0" r="15"/>
+      <path d="M-16 -22 L-24 -58 M16 -22 L24 -58 M-24 -58 H-8 M24 -58 H8"/>
+    </g>
+    <g transform="translate(650,730)">
+      <path d="M30 10 q30-16 60 0 v30 q0 34-30 48 q-30-14-30-48z"/>
+      <path d="M44 46 l12 12 l20-24"/>
+    </g>
+    <g transform="translate(70,640)">
+      <path d="M10 0 H70 V30 q0 30-30 40 q-30-10-30-40z"/>
+      <path d="M10 10 H-4 q0 28 14 32 M70 10 H84 q0 28-14 32"/>
+      <path d="M40 70 V86 M24 86 H56"/>
+    </g>
+  </g>
+
+  <!-- Links -->
+  <g>
+    <path class="dash" d="M170 160 L300 150"/>
+    <path class="dash" d="M540 150 L700 150"/>
+    <path class="dash" d="M130 205 L130 400"/>
+    <path class="dash" d="M420 230 V300"/>
+    <path class="dash" d="M240 665 L240 540"/>
+    <path class="dash" d="M470 560 V680"/>
+  </g>
+
+  <g>
+    <text class="mono" x="60" y="860">CERT-ID  XXXX-XXXX-XXXX</text>
+    <text class="mono" x="520" y="860">KIT  DAU  GHSEB  IELTS 7.5</text>
+    <text class="mono" x="60" y="330">ISSUER: KIT</text>
+    <text class="mono" x="600" y="300">STATUS: ACTIVE</text>
+    <text class="mono" x="600" y="320">SIGNATURE: VALID</text>
+    <text class="mono" x="60" y="40">-----BEGIN CERTIFICATE-----</text>
+    <text class="mono" x="620" y="880">MIIDdzCCAl+gAwIBAgIE</text>
+  </g>
+</svg>

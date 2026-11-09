@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <defs>
+    <style>
+      .line { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.13; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:#4386b8; stroke-width:1.1; fill:none; opacity:.10; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:6 8; }
+      .node { fill:#4386b8; opacity:.16; }
+      .nodeRing { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.15; }
+      .dev { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.12; stroke-linecap:round; stroke-linejoin:round; }
+      .devFill { fill:#4386b8; opacity:.10; }
+      .icon { stroke:#4386b8; stroke-width:1.4; fill:none; opacity:.12; stroke-linecap:round; stroke-linejoin:round; }
+      .txt { fill:#4386b8; opacity:.09; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; font-size:10px; letter-spacing:.12em; }
+      .mono { fill:#4386b8; opacity:.08; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas; font-size:10px; letter-spacing:.18em; }
+    </style>
+
+    <path id="hex" d="M50 0 L25 43.3 L-25 43.3 L-50 0 L-25 -43.3 L25 -43.3 Z"/>
+    <g id="gBug">
+      <ellipse cx="0" cy="2" rx="8" ry="11"/>
+      <circle cx="0" cy="-12" r="4"/>
+      <path d="M-8 -2 H-16 M8 -2 H16 M-8 6 H-16 M8 6 H16 M-7 -8 L-14 -14 M7 -8 L14 -14"/>
+    </g>
+    <g id="gTerm">
+      <rect x="-16" y="-12" width="32" height="24" rx="4"/>
+      <path d="M-9 -4 L-3 1 L-9 6 M2 6 H10"/>
+    </g>
+    <g id="gLock">
+      <rect x="-11" y="-2" width="22" height="16" rx="3"/>
+      <path d="M-6 -2 V-7 a6 6 0 0 1 12 0 V-2"/>
+    </g>
+    <g id="gKey">
+      <circle cx="-8" cy="0" r="6"/>
+      <path d="M-2 0 H16 M10 0 V6 M15 0 V5"/>
+    </g>
+    <g id="gCode">
+      <path d="M-6 -8 L-14 0 L-6 8 M6 -8 L14 0 L6 8 M3 -10 L-3 10"/>
+    </g>
+    <g id="gPhone">
+      <rect x="-9" y="-15" width="18" height="30" rx="4"/>
+      <path d="M-3 10 H3"/>
+    </g>
+  </defs>
+
+  <!-- Honeycomb: top-left -->
+  <g class="dev">
+    <use href="#hex" x="110" y="90"/>
+    <use href="#hex" x="110" y="176.6"/>
+    <use href="#hex" x="185" y="133.3"/>
+    <use href="#hex" x="185" y="219.9"/>
+    <use href="#hex" x="260" y="90"/>
+    <use href="#hex" x="260" y="176.6"/>
+    <use href="#hex" x="335" y="133.3"/>
+  </g>
+  <g class="devFill">
+    <use href="#hex" x="185" y="133.3" transform="translate(185 133.3) scale(.55) translate(-185 -133.3)"/>
+  </g>
+  <g class="icon">
+    <use href="#gBug" x="110" y="90"/>
+    <use href="#gTerm" x="110" y="176.6"/>
+    <use href="#gLock" x="185" y="219.9"/>
+    <use href="#gKey" x="260" y="90"/>
+    <use href="#gCode" x="260" y="176.6"/>
+    <use href="#gPhone" x="335" y="133.3"/>
+  </g>
+  <text class="txt" x="166" y="137">WEB</text>
+
+  <!-- Honeycomb: bottom-right -->
+  <g class="dev">
+    <use href="#hex" x="640" y="640"/>
+    <use href="#hex" x="640" y="726.6"/>
+    <use href="#hex" x="715" y="683.3"/>
+    <use href="#hex" x="715" y="769.9"/>
+    <use href="#hex" x="790" y="640"/>
+    <use href="#hex" x="790" y="726.6"/>
+    <use href="#hex" x="565" y="683.3"/>
+  </g>
+  <g class="devFill">
+    <use href="#hex" x="715" y="683.3" transform="translate(715 683.3) scale(.55) translate(-715 -683.3)"/>
+  </g>
+  <g class="icon">
+    <use href="#gTerm" x="640" y="640"/>
+    <use href="#gBug" x="640" y="726.6"/>
+    <use href="#gCode" x="790" y="640"/>
+    <use href="#gLock" x="790" y="726.6"/>
+    <use href="#gKey" x="565" y="683.3"/>
+    <use href="#gPhone" x="715" y="769.9"/>
+  </g>
+  <text class="txt" x="691" y="687">AWS</text>
+
+  <!-- Radar chart -->
+  <g>
+    <path class="line" d="M450 300 L592.7 403.6 L538.2 571.4 L361.8 571.4 L307.3 403.6 Z"/>
+    <path class="line" d="M450 350 L545.1 419.1 L508.8 530.9 L391.2 530.9 L354.9 419.1 Z"/>
+    <path class="line" d="M450 400 L497.6 434.5 L479.4 490.5 L420.6 490.5 L402.4 434.5 Z"/>
+    <path class="dash" d="M450 450 L450 300 M450 450 L592.7 403.6 M450 450 L538.2 571.4 M450 450 L361.8 571.4 M450 450 L307.3 403.6"/>
+    <path class="devFill" d="M450 310 L554.6 416 L526.4 555.2 L397.1 522.8 L335.9 412.9 Z"/>
+    <path class="line" d="M450 310 L554.6 416 L526.4 555.2 L397.1 522.8 L335.9 412.9 Z"/>
+    <circle class="node" cx="450" cy="310" r="3.4"/>
+    <circle class="node" cx="554.6" cy="416" r="3.4"/>
+    <circle class="node" cx="526.4" cy="555.2" r="3.4"/>
+    <circle class="node" cx="397.1" cy="522.8" r="3.4"/>
+    <circle class="node" cx="335.9" cy="412.9" r="3.4"/>
+    <circle class="nodeRing" cx="450" cy="450" r="9"/>
+    <text class="txt" x="436" y="288">WEB</text>
+    <text class="txt" x="604" y="400">ML</text>
+    <text class="txt" x="542" y="590">CLOUD</text>
+    <text class="txt" x="334" y="590">NETWORK</text>
+    <text class="txt" x="246" y="400">CRYPTO</text>
+  </g>
+
+  <!-- Skill chips (top-right) -->
+  <g>
+    <rect class="dev" x="520" y="60" width="70" height="28" rx="14"/>
+    <rect class="dev" x="600" y="60" width="90" height="28" rx="14"/>
+    <rect class="dev" x="700" y="60" width="60" height="28" rx="14"/>
+    <rect class="dev" x="560" y="100" width="80" height="28" rx="14"/>
+    <rect class="dev" x="650" y="100" width="100" height="28" rx="14"/>
+    <text class="txt" x="540" y="78">PYTHON</text>
+    <text class="txt" x="624" y="78">RUST</text>
+    <text class="txt" x="716" y="78">C++</text>
+    <text class="txt" x="580" y="118">REACT</text>
+    <text class="txt" x="672" y="118">POSTGRESQL</text>
+  </g>
+
+  <!-- Proficiency bars (bottom-left) -->
+  <g transform="translate(70,640)">
+    <rect class="dev" x="0" y="0" width="240" height="10" rx="5"/>
+    <rect class="devFill" x="0" y="0" width="200" height="10" rx="5"/>
+    <rect class="dev" x="0" y="34" width="240" height="10" rx="5"/>
+    <rect class="devFill" x="0" y="34" width="170" height="10" rx="5"/>
+    <rect class="dev" x="0" y="68" width="240" height="10" rx="5"/>
+    <rect class="devFill" x="0" y="68" width="215" height="10" rx="5"/>
+    <rect class="dev" x="0" y="102" width="240" height="10" rx="5"/>
+    <rect class="devFill" x="0" y="102" width="140" height="10" rx="5"/>
+    <text class="txt" x="0" y="-10">PROFICIENCY</text>
+  </g>
+
+  <!-- Links between clusters -->
+  <g>
+    <path class="dash" d="M335 133.3 L450 300"/>
+    <path class="dash" d="M565 683.3 L538.2 571.4"/>
+    <path class="dash" d="M185 219.9 L307.3 403.6"/>
+    <path class="dash" d="M640 640 L592.7 403.6"/>
+  </g>
+
+  <g>
+    <text class="mono" x="70" y="810">SKILL_TREE.LOAD()  LEVEL++</text>
+    <text class="mono" x="420" y="140">0xA1B2  0xC3D4  0xE5F6</text>
+    <text class="mono" x="70" y="330">$ skills --list --verbose</text>
+    <text class="mono" x="600" y="230">{ "focus": "security" }</text>
+    <text class="mono" x="440" y="860">PYTHON  RUST  TS  C++</text>
+  </g>
+</svg>

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <defs>
+    <style>
+      .line { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.13; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:#4386b8; stroke-width:1.1; fill:none; opacity:.10; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:6 8; }
+      .node { fill:#4386b8; opacity:.16; }
+      .nodeRing { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.15; }
+      .dev { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.12; stroke-linecap:round; stroke-linejoin:round; }
+      .devFill { fill:#4386b8; opacity:.10; }
+      .icon { stroke:#4386b8; stroke-width:1.4; fill:none; opacity:.12; stroke-linecap:round; stroke-linejoin:round; }
+      .txt { fill:#4386b8; opacity:.09; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; font-size:10px; letter-spacing:.12em; }
+      .mono { fill:#4386b8; opacity:.08; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas; font-size:10px; letter-spacing:.18em; }
+    </style>
+  </defs>
+
+  <!-- Timeline spine -->
+  <g>
+    <path class="line" d="M450 30 V870"/>
+    <circle class="node" cx="450" cy="110" r="4"/>
+    <circle class="node" cx="450" cy="270" r="4"/>
+    <circle class="node" cx="450" cy="430" r="4"/>
+    <circle class="node" cx="450" cy="590" r="4"/>
+    <circle class="node" cx="450" cy="750" r="4"/>
+    <circle class="nodeRing" cx="450" cy="110" r="12"/>
+    <circle class="nodeRing" cx="450" cy="270" r="12"/>
+    <circle class="nodeRing" cx="450" cy="430" r="12"/>
+    <circle class="nodeRing" cx="450" cy="590" r="12"/>
+    <circle class="nodeRing" cx="450" cy="750" r="12"/>
+  </g>
+
+  <!-- Connectors -->
+  <g>
+    <path class="dash" d="M390 110 H438"/>
+    <path class="dash" d="M462 270 H510"/>
+    <path class="dash" d="M390 430 H438"/>
+    <path class="dash" d="M462 590 H510"/>
+    <path class="dash" d="M390 750 H438"/>
+  </g>
+
+  <!-- Milestone cards -->
+  <g>
+    <g transform="translate(180,70)">
+      <rect class="dev" x="0" y="0" width="210" height="80" rx="16"/>
+      <circle class="dev" cx="30" cy="30" r="10"/>
+      <path class="dev" d="M54 24 H170"/>
+      <path class="dev" d="M54 40 H140"/>
+      <path class="dev" d="M20 62 H182"/>
+      <text class="txt" x="54" y="20">SILICON BITS</text>
+    </g>
+    <g transform="translate(510,230)">
+      <rect class="dev" x="0" y="0" width="210" height="80" rx="16"/>
+      <circle class="dev" cx="30" cy="30" r="10"/>
+      <path class="dev" d="M54 24 H170"/>
+      <path class="dev" d="M54 40 H150"/>
+      <path class="dev" d="M20 62 H170"/>
+      <circle class="devFill" cx="186" cy="62" r="3"/>
+      <text class="txt" x="54" y="20">FREELANCE</text>
+    </g>
+    <g transform="translate(180,390)">
+      <rect class="dev" x="0" y="0" width="210" height="80" rx="16"/>
+      <circle class="dev" cx="30" cy="30" r="10"/>
+      <path class="dev" d="M54 24 H170"/>
+      <path class="dev" d="M54 40 H128"/>
+      <path class="dev" d="M20 62 H190"/>
+      <text class="txt" x="54" y="20">ASQUARE</text>
+    </g>
+    <g transform="translate(510,550)">
+      <rect class="dev" x="0" y="0" width="210" height="80" rx="16"/>
+      <circle class="dev" cx="30" cy="30" r="10"/>
+      <path class="dev" d="M54 24 H170"/>
+      <path class="dev" d="M54 40 H146"/>
+      <path class="dev" d="M20 62 H160"/>
+      <circle class="devFill" cx="186" cy="62" r="3"/>
+      <circle class="devFill" cx="174" cy="62" r="3"/>
+      <text class="txt" x="54" y="20">DRDO RESEARCH</text>
+    </g>
+    <g transform="translate(180,710)">
+      <rect class="dev" x="0" y="0" width="210" height="80" rx="16"/>
+      <circle class="dev" cx="30" cy="30" r="10"/>
+      <path class="dev" d="M54 24 H170"/>
+      <path class="dev" d="M54 40 H136"/>
+      <path class="dev" d="M20 62 H176"/>
+      <text class="txt" x="54" y="20">SIMFORM</text>
+    </g>
+  </g>
+
+  <!-- Icons -->
+  <g class="icon">
+    <g transform="translate(50,60)">
+      <rect x="0" y="16" width="80" height="54" rx="10"/>
+      <path d="M28 16 V8 q0-6 6-6 h12 q6 0 6 6 V16"/>
+      <path d="M0 40 H80"/>
+      <path d="M34 40 V48 H46 V40"/>
+    </g>
+    <g transform="translate(770,70)">
+      <rect x="0" y="8" width="80" height="70" rx="10"/>
+      <path d="M0 30 H80 M22 0 V16 M58 0 V16"/>
+      <path d="M16 46 h8 M36 46 h8 M56 46 h8 M16 62 h8 M36 62 h8"/>
+    </g>
+    <g transform="translate(60,560)">
+      <path d="M0 80 H30 V60 H60 V40 H90 V20 H120"/>
+      <path d="M0 80 V90 H120 V20"/>
+      <path d="M100 4 L120 20 M104 20 L120 20"/>
+    </g>
+    <g transform="translate(770,420)">
+      <rect x="0" y="50" width="20" height="40"/>
+      <rect x="30" y="30" width="20" height="60"/>
+      <rect x="60" y="0" width="20" height="90"/>
+    </g>
+    <g transform="translate(760,740)">
+      <circle cx="30" cy="30" r="26"/>
+      <path d="M30 14 V30 L42 38"/>
+    </g>
+  </g>
+
+  <g>
+    <text class="mono" x="50" y="250">git log --oneline</text>
+    <text class="mono" x="50" y="270">a1b2c3d  start</text>
+    <text class="mono" x="50" y="290">e4f5a6b  grow</text>
+    <text class="mono" x="740" y="250">T+00:00  KICKOFF</text>
+    <text class="mono" x="740" y="270">T+72:00  REPORT</text>
+    <text class="mono" x="740" y="600">SPRINT 01..N</text>
+    <text class="mono" x="50" y="860">BACKEND  SECURITY  RESEARCH</text>
+    <text class="mono" x="610" y="860">DEPLOY  ITERATE</text>
+  </g>
+</svg>

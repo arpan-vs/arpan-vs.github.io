@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <defs>
+    <style>
+      .line { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.13; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:#4386b8; stroke-width:1.1; fill:none; opacity:.10; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:6 8; }
+      .node { fill:#4386b8; opacity:.16; }
+      .nodeRing { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.15; }
+      .dev { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.12; stroke-linecap:round; stroke-linejoin:round; }
+      .devFill { fill:#4386b8; opacity:.10; }
+      .icon { stroke:#4386b8; stroke-width:1.4; fill:none; opacity:.12; stroke-linecap:round; stroke-linejoin:round; }
+      .txt { fill:#4386b8; opacity:.09; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; font-size:10px; letter-spacing:.12em; }
+      .mono { fill:#4386b8; opacity:.08; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas; font-size:10px; letter-spacing:.18em; }
+    </style>
+  </defs>
+
+  <!-- Envelopes -->
+  <g>
+    <g transform="translate(70,70)">
+      <rect class="dev" x="0" y="0" width="170" height="116" rx="16"/>
+      <path class="dev" d="M8 10 L85 66 L162 10"/>
+      <path class="dev" d="M8 106 L66 50 M162 106 L104 50"/>
+    </g>
+    <g transform="translate(610,640)">
+      <rect class="dev" x="0" y="0" width="200" height="136" rx="18"/>
+      <path class="dev" d="M10 12 L100 78 L190 12"/>
+      <path class="dev" d="M10 124 L78 58 M190 124 L122 58"/>
+      <circle class="devFill" cx="170" cy="112" r="3"/>
+    </g>
+  </g>
+
+  <!-- Chat bubbles -->
+  <g>
+    <g transform="translate(540,90)">
+      <rect class="dev" x="0" y="0" width="220" height="80" rx="18"/>
+      <path class="dev" d="M30 80 L22 102 L56 80"/>
+      <path class="dev" d="M22 26 H180"/>
+      <path class="dev" d="M22 46 H140"/>
+      <circle class="devFill" cx="196" cy="60" r="3"/>
+    </g>
+    <g transform="translate(620,210)">
+      <rect class="dev" x="0" y="0" width="170" height="60" rx="16"/>
+      <path class="dev" d="M140 60 L150 80 L118 60"/>
+      <path class="dev" d="M20 22 H130"/>
+      <path class="dev" d="M20 40 H100"/>
+    </g>
+    <g transform="translate(70,430)">
+      <rect class="dev" x="0" y="0" width="200" height="74" rx="18"/>
+      <path class="dev" d="M170 74 L180 96 L146 74"/>
+      <circle class="devFill" cx="36" cy="37" r="3"/>
+      <circle class="devFill" cx="56" cy="37" r="3"/>
+      <circle class="devFill" cx="76" cy="37" r="3"/>
+      <path class="dev" d="M110 37 h60"/>
+    </g>
+  </g>
+
+  <!-- Paper plane + trajectory -->
+  <g>
+    <path class="dash" d="M420 360 C330 420 300 300 180 330 C120 346 110 300 130 270"/>
+    <g class="icon" transform="translate(400,300) rotate(-8)">
+      <path d="M0 24 L130 0 L64 100 L48 60 Z"/>
+      <path d="M48 60 L130 0"/>
+      <path d="M48 60 L40 88 L64 100"/>
+    </g>
+  </g>
+
+  <!-- Antenna + signal -->
+  <g class="icon">
+    <g transform="translate(110,690)">
+      <path d="M0 -50 V70"/>
+      <path d="M-20 70 H20"/>
+      <path d="M-10 -50 L0 -64 L10 -50"/>
+      <circle cx="0" cy="-70" r="4"/>
+    </g>
+    <path d="M140 640 a30 30 0 0 1 0 60"/>
+    <path d="M160 626 a52 52 0 0 1 0 88"/>
+    <path d="M180 612 a74 74 0 0 1 0 116"/>
+    <path d="M80 640 a30 30 0 0 0 0 60"/>
+    <path d="M60 626 a52 52 0 0 0 0 88"/>
+  </g>
+
+  <!-- Phone -->
+  <g transform="translate(780,430)">
+    <rect class="dev" x="0" y="0" width="70" height="124" rx="14"/>
+    <path class="dev" d="M26 12 H44"/>
+    <path class="dev" d="M14 34 H56"/>
+    <path class="dev" d="M14 50 H46"/>
+    <path class="dev" d="M14 66 H52"/>
+    <circle class="dev" cx="35" cy="104" r="6"/>
+  </g>
+
+  <!-- @ badge -->
+  <g>
+    <circle class="nodeRing" cx="450" cy="560" r="52"/>
+    <circle class="line" cx="450" cy="560" r="68" stroke-dasharray="4 8"/>
+    <text class="txt" x="450" y="582" text-anchor="middle" style="font-size:64px; letter-spacing:0; opacity:.12">@</text>
+  </g>
+
+  <!-- Network packet path (bottom) -->
+  <g>
+    <path class="line" d="M60 830 L300 800 L520 840 L720 810 L840 840"/>
+    <circle class="node" cx="60" cy="830" r="3.4"/>
+    <circle class="node" cx="300" cy="800" r="3.4"/>
+    <circle class="node" cx="520" cy="840" r="3.4"/>
+    <circle class="node" cx="720" cy="810" r="3.4"/>
+    <circle class="node" cx="840" cy="840" r="3.4"/>
+    <circle class="nodeRing" cx="300" cy="800" r="10"/>
+    <circle class="nodeRing" cx="720" cy="810" r="10"/>
+    <rect class="devFill" x="170" y="806" width="12" height="12" rx="2" transform="rotate(-6 176 812)"/>
+    <rect class="devFill" x="410" y="814" width="12" height="12" rx="2" transform="rotate(8 416 820)"/>
+    <rect class="devFill" x="620" y="820" width="12" height="12" rx="2" transform="rotate(-8 626 826)"/>
+  </g>
+
+  <!-- Network packet path (top) -->
+  <g>
+    <path class="dash" d="M260 40 L420 60 L540 30"/>
+    <circle class="node" cx="260" cy="40" r="3"/>
+    <circle class="node" cx="420" cy="60" r="3"/>
+    <circle class="node" cx="540" cy="30" r="3"/>
+  </g>
+
+  <!-- Links between elements -->
+  <g>
+    <path class="dash" d="M240 128 L400 310"/>
+    <path class="dash" d="M540 130 L520 220 L530 340"/>
+    <path class="dash" d="M510 590 L610 690"/>
+    <path class="dash" d="M270 470 L400 540"/>
+  </g>
+
+  <g>
+    <text class="txt" x="100" y="210">INBOX</text>
+    <text class="txt" x="650" y="800">SEND</text>
+    <text class="txt" x="440" y="640">SMTP  TLS</text>
+    <text class="txt" x="790" y="580">SIGNAL</text>
+    <text class="mono" x="70" y="360">From: you@example.com</text>
+    <text class="mono" x="70" y="380">Subject: Engagement inquiry</text>
+    <text class="mono" x="540" y="330">-----BEGIN PGP MESSAGE-----</text>
+    <text class="mono" x="560" y="400">hQEMA2sK9vXf3oLsAQf</text>
+    <text class="mono" x="70" y="560">mailto:hello@example.com</text>
+    <text class="mono" x="300" y="890">HELO  250 OK  QUIT</text>
+  </g>
+</svg>

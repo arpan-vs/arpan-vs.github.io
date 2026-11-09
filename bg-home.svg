@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <defs>
+    <style>
+      .line { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.13; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:#4386b8; stroke-width:1.1; fill:none; opacity:.10; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:6 8; }
+      .node { fill:#4386b8; opacity:.16; }
+      .nodeRing { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.15; }
+      .dev { stroke:#4386b8; stroke-width:1.2; fill:none; opacity:.12; stroke-linecap:round; stroke-linejoin:round; }
+      .devFill { fill:#4386b8; opacity:.10; }
+      .icon { stroke:#4386b8; stroke-width:1.4; fill:none; opacity:.12; stroke-linecap:round; stroke-linejoin:round; }
+      .txt { fill:#4386b8; opacity:.09; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; font-size:10px; letter-spacing:.12em; }
+      .mono { fill:#4386b8; opacity:.08; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas; font-size:10px; letter-spacing:.18em; }
+    </style>
+  </defs>
+
+  <!-- Radar rings -->
+  <g>
+    <circle class="line" cx="450" cy="450" r="120"/>
+    <circle class="line" cx="450" cy="450" r="220"/>
+    <circle class="line" cx="450" cy="450" r="330"/>
+    <circle class="dash" cx="450" cy="450" r="170"/>
+    <circle class="dash" cx="450" cy="450" r="280"/>
+    <path class="dash" d="M90 450 H810"/>
+    <path class="dash" d="M450 90 V810"/>
+    <path class="dash" d="M200 200 L700 700"/>
+    <path class="dash" d="M700 200 L200 700"/>
+    <path class="devFill" d="M450 450 L780 450 A330 330 0 0 0 735.8 285 Z"/>
+    <path class="line" d="M450 450 L735.8 285"/>
+  </g>
+
+  <!-- Hub links -->
+  <g>
+    <path class="line" d="M450 450 L656.7 374.8"/>
+    <path class="line" d="M450 450 L374.8 243.3"/>
+    <path class="line" d="M450 450 L243.3 525.2"/>
+    <path class="line" d="M450 450 L525.2 656.8"/>
+    <path class="dash" d="M656.7 374.8 L735.8 615"/>
+    <path class="dash" d="M374.8 243.3 L615 164.2"/>
+    <path class="dash" d="M243.3 525.2 L139.9 337.1"/>
+    <path class="dash" d="M525.2 656.8 L260.7 720.3"/>
+    <path class="dash" d="M374.8 243.3 L139.9 337.1"/>
+    <path class="dash" d="M656.7 374.8 L615 164.2"/>
+    <path class="dash" d="M243.3 525.2 L260.7 720.3"/>
+    <path class="dash" d="M525.2 656.8 L735.8 615"/>
+  </g>
+
+  <!-- Nodes -->
+  <g>
+    <circle class="node" cx="656.7" cy="374.8" r="3.4"/>
+    <circle class="node" cx="374.8" cy="243.3" r="3.4"/>
+    <circle class="node" cx="243.3" cy="525.2" r="3.4"/>
+    <circle class="node" cx="525.2" cy="656.8" r="3.4"/>
+    <circle class="node" cx="615" cy="164.2" r="3"/>
+    <circle class="node" cx="139.9" cy="337.1" r="3"/>
+    <circle class="node" cx="260.7" cy="720.3" r="3"/>
+    <circle class="node" cx="735.8" cy="615" r="3"/>
+    <circle class="node" cx="534.9" cy="365.1" r="2.6"/>
+    <circle class="node" cx="365.1" cy="534.9" r="2.6"/>
+    <circle class="nodeRing" cx="656.7" cy="374.8" r="11"/>
+    <circle class="nodeRing" cx="374.8" cy="243.3" r="11"/>
+    <circle class="nodeRing" cx="243.3" cy="525.2" r="11"/>
+    <circle class="nodeRing" cx="525.2" cy="656.8" r="11"/>
+    <circle class="nodeRing" cx="450" cy="450" r="58"/>
+  </g>
+
+  <!-- Hub shield -->
+  <g class="icon">
+    <g transform="translate(405,405)">
+      <path d="M30 10 q30-16 60 0 v30 q0 34-30 48 q-30-14-30-48z"/>
+      <path d="M32 46 l10 10 l18-20"/>
+    </g>
+  </g>
+
+  <!-- Corner devices -->
+  <g>
+    <g transform="translate(50,50)">
+      <rect class="dev" x="0" y="0" width="150" height="86" rx="14"/>
+      <path class="dev" d="M0 22 H150"/>
+      <circle class="devFill" cx="16" cy="11" r="3"/>
+      <circle class="devFill" cx="30" cy="11" r="3"/>
+      <circle class="devFill" cx="44" cy="11" r="3"/>
+      <path class="dev" d="M16 40 l10 8 l-10 8"/>
+      <path class="dev" d="M34 58 H84"/>
+      <path class="dev" d="M16 72 H110"/>
+    </g>
+    <g transform="translate(700,60)">
+      <rect class="dev" x="0" y="0" width="150" height="80" rx="16"/>
+      <path class="dev" d="M20 26 H130"/>
+      <path class="dev" d="M20 44 H108"/>
+      <path class="dev" d="M20 62 H122"/>
+      <circle class="devFill" cx="132" cy="62" r="3"/>
+    </g>
+    <g transform="translate(60,780)">
+      <rect class="dev" x="0" y="0" width="160" height="70" rx="14"/>
+      <circle class="devFill" cx="30" cy="35" r="3"/>
+      <circle class="devFill" cx="50" cy="35" r="3"/>
+      <circle class="devFill" cx="70" cy="35" r="3"/>
+      <path class="dev" d="M104 35 h34"/>
+    </g>
+    <g transform="translate(690,770)">
+      <rect class="dev" x="0" y="0" width="160" height="80" rx="16"/>
+      <path class="dev" d="M20 26 H140"/>
+      <path class="dev" d="M20 44 H116"/>
+      <path class="dev" d="M20 62 H130"/>
+    </g>
+    <path class="dash" d="M200 100 L374.8 243.3"/>
+    <path class="dash" d="M700 100 L615 164.2"/>
+    <path class="dash" d="M200 800 L260.7 720.3"/>
+    <path class="dash" d="M700 780 L735.8 615"/>
+  </g>
+
+  <!-- Globe + crosshair icons -->
+  <g class="icon">
+    <g transform="translate(780,340)">
+      <circle cx="32" cy="32" r="22"/>
+      <ellipse cx="32" cy="32" rx="9" ry="22"/>
+      <path d="M10 32 H54"/>
+    </g>
+    <g transform="translate(60,520)">
+      <circle cx="32" cy="32" r="22"/>
+      <circle cx="32" cy="32" r="8"/>
+      <path d="M32 6 v-10M32 68 v10M6 32 h-10M68 32 h10"/>
+    </g>
+  </g>
+
+  <!-- Labels -->
+  <g>
+    <text class="txt" x="670" y="368">RECON</text>
+    <text class="txt" x="390" y="236">EXPLOIT</text>
+    <text class="txt" x="178" y="552">PERSIST</text>
+    <text class="txt" x="540" y="680">REPORT</text>
+    <text class="txt" x="620" y="160">RED TEAM</text>
+    <text class="txt" x="110" y="330">OSINT</text>
+    <text class="txt" x="270" y="744">C2</text>
+    <text class="txt" x="745" y="640">PIVOT</text>
+
+    <text class="mono" x="60" y="170">nmap -sV -sC 10.0.0.0/24</text>
+    <text class="mono" x="640" y="170">whoami /priv</text>
+    <text class="mono" x="60" y="760">0xDEADC0DE 0xBADF00D</text>
+    <text class="mono" x="640" y="750">CVE-XXXX-XXXX  TTP  IOC</text>
+    <text class="mono" x="260" y="60">AD  KERBEROS  LDAP  SMB</text>
+    <text class="mono" x="520" y="870">01010010 01000101 01000100</text>
+  </g>
+</svg>
